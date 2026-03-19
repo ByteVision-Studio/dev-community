@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chat</title>
+<link rel="stylesheet" href="chat.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="chat">
+
+<!-- Header + Auth-Bereich -->
+<header id="app-header"></header>
+<div id="auth-area"></div>
+
+<!-- Flash-Nachrichten -->
+<div id="flash-container"></div>
+
+<div class="chat-container">
+    
+    <div class="chat-sidebar">
+        <h3>User</h3>
+        <div id="userList"></div>
+    </div>
+
+    <div class="chat-main">
+        <div id="chatHeader">Wähle einen User</div>
+        <div id="chatMessages" style="overflow-y:auto;"></div>
+
+        <form id="chatForm">
+            <input type="text" id="chatInput" placeholder="Nachricht..." required>
+            <button>Senden</button>
+        </form>
+    </div>
+
+</div>
+
+<script src="api.js"></script>
+<script src="app.js"></script>
+<script src="chat.js"></script>
+
+</body>
+</html>

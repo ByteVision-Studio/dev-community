@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Register — DevCommunity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="register">
+    <header id="app-header"></header>
+    <div class="welcome-box">
+        <h1>Willkommen bei DevCommunity!</h1>
+    </div>
+    <main class="container">
+        <div id="flash-container"></div>
+        <div class="card" style="max-width:520px;margin:auto">
+            <h2>Registrieren</h2>
+            <form id="registerForm">
+                <input class="input" name="username" placeholder="Benutzername" required>
+                <input class="input" name="email" type="email" placeholder="Email" required>
+                <input class="input" name="password" type="password" placeholder="Passwort" required>
+                <textarea class="input" name="bio" placeholder="Kurz über dich (optional)"></textarea>
+                <div class="row" style="justify-content:flex-end">
+                    <button class="btn">Registrieren</button>
+                </div>
+            </form>
+            <p style="margin-top:10px">Schon registriert? <a href="login.html">Login</a></p>
+        </div>
+    </main>
+
+    <footer class="container"><small>© DevCommunity</small></footer>
+
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Login — DevCommunity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="login">
+    <header id="app-header"></header>
+    <div class="welcome-box">
+        <h1>Willkommen zurück!</h1>
+    </div>
+    <main class="container">
+        <div id="flash-container"></div>
+        <div class="card" style="max-width:520px;margin:auto">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input class="input" name="identifier" placeholder="Benutzername oder Email" required>
+                <input class="input" name="password" type="password" placeholder="Passwort" required>
+                <div class="row" style="justify-content:flex-end">
+                    <button class="btn">Login</button>
+                </div>
+            </form>
+            <p style="margin-top:10px">Noch keinen Account? <a href="register.html">Registrieren</a></p>
+        </div>
+    </main>
+
+    <footer class="container"><small>© DevCommunity</small></footer>
+
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
